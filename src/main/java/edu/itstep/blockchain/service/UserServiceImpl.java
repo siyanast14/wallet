@@ -8,6 +8,8 @@ import org.springframework.stereotype.Service;
 import edu.itstep.blockchain.domain.User;
 import edu.itstep.blockchain.repository.UserRepository;
 
+import java.util.List;
+
 @Service
 public class UserServiceImpl implements UserService {
 	@Autowired
@@ -22,10 +24,9 @@ public class UserServiceImpl implements UserService {
 	public User findUserById(Integer id) {
 		return userRepository.findById(id);
 	}
-	
+
 	public List<User> getAllUsers(){
 		return (List<User>) userRepository.findAll();
 	}
-	
 
 }

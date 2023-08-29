@@ -22,7 +22,7 @@ import edu.itstep.blockchain.repository.SuportSystemRepository;
 public class SupportSystemController {
   	
   SuportSystemRepository ssr;
-  IssueRepository ir;
+  IssueRepository ir ;
   
   public SupportSystemController(SuportSystemRepository ssr, IssueRepository ir) {
 	  this.ssr = ssr;
